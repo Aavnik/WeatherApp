@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% block css %}
+{% load static %}
+body {
+    color: #ffffff;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: #ffffff;
+    background-repeat: no-repeat
+}
+
+.card {
+    background-image: url("https://source.unsplash.com/1000x500/?weather");
+    background-size: cover;
+    width: 1000px;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 4px #9E9E9E;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.time-font {
+    font-size: 50px
+}
+
+.sm-font {
+    font-size: 18px
+}
+
+.med-font {
+    font-size: 28px
+}
+
+.large-font {
+    font-size: 60px
+}
+
+.aav{
+    text-align: right;
+}
+.aav2{
+    text-align: right;
+}
+.aav3{
+    text-align: right;
+}
+
+{% endblock css %}
+{% block body  %}
+
+
+<div class="container-fluid px-1 px-md-4 py-5 mx-auto">
+
+
+    <div class="row d-flex justify-content-center px-3">
+    
+
+
+        <div class="card">
+        
+             <!----city--->
+            <h2 class="ml-auto mr-4 mt-3 mb-0 aav">{{data.city}}</h2>
+            <!----day--->
+            <p class="ml-auto mr-4 mb-0 med-font aav2">{{data.weather}}</p>
+            <!----Pressure--->
+            <p class="ml-auto mr-4 mb-0 med-font aav2">{{data.pressure}} Mb</p>
+            <!----Humidity--->
+            <p class="ml-auto mr-4 mb-0 med-font aav2">{{data.humidity}} %</p>
+            <!----windspeed--->
+            <p class="ml-auto mr-4 mb-0 med-font aav2">{{data.windspeed}} km/hr</p>
+            <!---- clouds--->
+            <p class="ml-auto mr-4 mb-0 med-font aav2">{{data.desc}}</p>
+            <!---- visibility--->
+            <p class="ml-auto mr-4 mb-0 med-font aav2">{{data.visibility}} km</p>
+            <!---- icon--->
+            <p class="ml-auto mr-4 mb-0 med-font aav2">icons</p>
+            <!----temperature--->
+            <h1 class="ml-auto mr-4 large-font aav3">{{data.temp}}°C</h1>
+            <!----city--->
+            <p class="time-font mb-0 ml-4 mt-auto">{{data.tme}} <span class="sm-font">{{data.pss}}</span></p>
+            <p class="ml-4 mb-4">{{data.ampm}}</p>
+        </div>
+    </div>
+</div>
+
+{% endblock  %}
+{% block title  %} Weather Home{% endblock title  %}

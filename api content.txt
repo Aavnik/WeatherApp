@@ -1,0 +1,21 @@
+b934fa9f86a966c156fb2b9e141142d0
+
+
+c7b6088a27aa3eccde2f52c4c4de8354
+
+KEoFOMDalettgyH1MsHOlMutMUuNTrOK
+
+
+
+wind speed
+humidity
+pressure
+cloud cover
+visibility
+country
+tepm
+desp 
+icon
+
+
+background-image: url("{% static 'dust.jpg' %}");
