@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'k3_wdtf!r(ww7+87tne2^7p80)c^**t!dlsmi6)ds6yfc0a)9-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['thedjweather.herokuapp.com','localhost']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -120,5 +120,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = 'static'
-
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
