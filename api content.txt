@@ -1,21 +1,18 @@
-b934fa9f86a966c156fb2b9e141142d0
-
+OpenWeatherMap.com API - b934fa9f86a966c156fb2b9e141142d0
 
 c7b6088a27aa3eccde2f52c4c4de8354
 
-KEoFOMDalettgyH1MsHOlMutMUuNTrOK
 
-
-
-wind speed
-humidity
-pressure
-cloud cover
-visibility
-country
-tepm
-desp 
-icon
+Show things in weather app django
+Wind speed
+Humidity
+Pressure
+Cloud cover
+Visibility
+Country
+Tepm
+Desp 
+Icon
 
 
 background-image: url("{% static 'dust.jpg' %}");
